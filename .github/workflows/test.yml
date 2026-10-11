@@ -1,7 +1,19 @@
 name: P
-on: workflow_dispatch
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: action-probe
+  cancel-in-progress: true
+
 jobs:
   probe:
-    runs-on: ubuntu-latest
+    name: Manual probe
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
     steps:
-      - run: echo hi
+      - name: Print the probe message
+        run: echo "hi"
