@@ -1,3 +1,5 @@
+This repo is archived and no longer maintained.
+
 # Actions Private Test
 
 A deliberately minimal repository for trying a manual GitHub Actions run. It contains no application code.
